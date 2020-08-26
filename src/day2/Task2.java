@@ -9,7 +9,7 @@ public class Task2 {
         int b = scanner.nextInt();
 
         for (int i = a; i < b; i++) {
-            if ((i % 5) == 0 && (i % 10) != 0) {
+            if (i % 5 == 0 && i % 10 != 0) {
                 System.out.println(i);
             }
         }

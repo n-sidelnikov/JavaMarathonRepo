@@ -8,12 +8,11 @@ public class Task3 {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
 
-        int i = a;
-        while (i < b) {
-            if ((i % 5) == 0 && (i % 10) != 0) {
-                System.out.println(i);
+        while (a < b) {
+            if (a % 5 == 0 && a % 10 != 0) {
+                System.out.println(a);
             }
-            i = i + 1;
+            a++;
         }
     }
 }
