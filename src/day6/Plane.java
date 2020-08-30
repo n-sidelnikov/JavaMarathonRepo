@@ -4,6 +4,15 @@ public class Plane {
     private String producer;
     private int yearOfIssue;
     private int length;
+
+    public void setYearOfIssue(int yearOfIssue) {
+        this.yearOfIssue = yearOfIssue;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
     private int weight;
     private int fuelOfVolume = 0;
 
@@ -14,11 +23,11 @@ public class Plane {
         this.weight = weight;
     }
 
-    void info() {
-        System.out.println("Изготовитель: " + producer + ", год выпуска: " + yearOfIssue + ", длина: " + length + ", вес: " + weight);
+   public void info() {
+        System.out.println("Изготовитель: " + producer + ", год выпуска: " + yearOfIssue + ", длина: " + length + ", вес: " + weight + " обьем топлива в баке: " + fuelOfVolume);
     }
 
-    int fillUp(int liters) {
-        return liters + fuelOfVolume;
+    public void  fillUp(int liters) {
+        fuelOfVolume = liters + fuelOfVolume;
     }
 }
