@@ -13,7 +13,7 @@ public class TestFigures {
                 new Circle("Blue", 5),
         };
         System.out.println(calculateRedPerimeter(figures));
-        System.out.println(calculateRedPerimeter(figures));
+        System.out.println(calculateRedArea(figures));
     }
 
     public static double calculateRedPerimeter(Figure[] figures) {
